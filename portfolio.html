@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rufael Melese's Portfolio showcasing projects and technical skills developed during Hilcoe journey">
+    <meta name="keywords" content="Rufael Melese, Portfolio, Projects, C++, Java, C#, Laravel, React, Python, Golang">
+    <meta name="author" content="Rufael Melese">
+    <title>Portfolio | Rufael Melese - Hilcoe Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Added theme persistence script for consistent dark mode across pages -->
+    <script>
+        // Load saved theme or default to light mode
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+        
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const toggle = document.getElementById('theme-toggle');
+            
+            if (toggle.checked) {
+                html.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Add event listener when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.getElementById('theme-toggle');
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'dark') {
+                toggle.checked = true;
+            }
+            toggle.addEventListener('change', toggleTheme);
+        });
+    </script>
+    
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Rufael.Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <label for="theme-toggle" class="theme-switch">
+                <span class="theme-icon">🌙</span>
+                <span class="theme-icon">☀️</span>
+            </label>
+        </div>
+    </nav>
+
+    <main class="portfolio-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>Rufael's Portfolio</h1>
+                <p>A showcase of projects and technical achievements throughout my Hilcoe journey</p>
+            </header>
+
+            <!-- Featured Projects -->
+            <section class="featured-projects">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card featured">
+                        <div class="project-image">
+                            <!-- Updated placeholder images with descriptive queries for your specific projects -->
+                            <img src="/placeholder.svg?height=250&width=400" alt="Men's Cloth Store Management System - C# Windows Forms Application">
+                        </div>
+                        <div class="project-content">
+                            <h3>Men's Cloth Store Management System</h3>
+                            <p>A comprehensive desktop application built with C# Windows Forms for managing a men's clothing store. Features include inventory management, sales tracking, customer database, and reporting system with an intuitive GUI interface.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Windows Forms</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">.NET Framework</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Guest House Management System - DSA Implementation">
+                        </div>
+                        <div class="project-content">
+                            <h3>Guest House Management System</h3>
+                            <p>An advanced data structures and algorithms project implementing a complete guest house management solution. Utilizes efficient data structures for room allocation, booking management, and guest services with optimized search and sorting algorithms.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Data Structures</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Memory Management</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Typing Speed Tester - Assembly Language Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Typing Speed Tester</h3>
+                            <p>A low-level programming project built entirely in Assembly Language that measures typing speed and accuracy. Demonstrates direct hardware interaction, keyboard input handling, timer implementation, and real-time performance calculations at the system level.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Assembly Language</span>
+                                <span class="tech-tag">x86 Architecture</span>
+                                <span class="tech-tag">Hardware Interface</span>
+                                <span class="tech-tag">System Programming</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">View Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="technical-skills">
+                <h2>Technical Proficiency</h2>
+                <div class="skills-categories">
+                    <div class="skill-category-card">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percentage">55%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                                <span class="skill-percentage">30%</span>
+                            </div>
+                            <div class="skill-item favorite-skill">
+                                <span class="skill-name">Golang ⭐</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                                <span class="skill-percentage">35%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <h3>Frameworks & Technologies</h3>
+                        <div class="framework-grid">
+                            <div class="framework-item">Laravel</div>
+                            <div class="framework-item">React</div>
+                            <div class="framework-item">Windows Forms</div>
+                            <div class="framework-item">.NET Framework</div>
+                            <div class="framework-item">Bootstrap</div>
+                            <div class="framework-item">jQuery</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <h3>Databases & Tools</h3>
+                        <div class="tools-list">
+                            <ul>
+                                <li>MySQL Database Design</li>
+                                <li>SQL Server Management</li>
+                                <li>Git Version Control</li>
+                                <li>Visual Studio / VS Code</li>
+                                <li>Unix/Linux Administration</li>
+                                <li>Data Mining Tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Projects -->
+            <section class="academic-projects">
+                <h2>Academic Project Highlights</h2>
+                <div class="academic-grid">
+                    <div class="academic-card">
+                        <h3>Laravel MVC Web Application</h3>
+                        <p>Built a complete web application using Laravel framework, implementing MVC architecture, Eloquent ORM, and modern web development practices learned in Web Development 2.</p>
+                        <span class="course-tag">Web Dev 2</span>
+                    </div>
+                    <div class="academic-card">
+                        <h3>Database Design & Implementation</h3>
+                        <p>Designed and implemented normalized database schemas with complex relationships, stored procedures, and query optimization techniques.</p>
+                        <span class="course-tag">Database Course</span>
+                    </div>
+                    <div class="academic-card">
+                        <h3>System Analysis & Design Project</h3>
+                        <p>Conducted complete system analysis using UML diagrams, requirement gathering, and designed software architecture following SDLC methodologies.</p>
+                        <span class="course-tag">SAD Course</span>
+                    </div>
+                    <div class="academic-card">
+                        <h3>Unix System Administration</h3>
+                        <p>Hands-on experience with Linux/Unix system administration, shell scripting, process management, and network configuration currently in progress.</p>
+                        <span class="course-tag">Unix Admin</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+  <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rufael Melese. 「 Code is my blade. Chaos my battlefield. 」</p>
+            <div class="footer-links">
+                <a href="https://github.com/Rufaelu" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rufael-melese-6b0047299?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5wQaJqSvRA%2BHwtEinuvOCA%3D%3D" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rufael Melese's Educational Journey at Hilcoe - Computer Science Academic Progress">
+    <meta name="keywords" content="Rufael Melese, Hilcoe Education, Computer Science Curriculum, Academic Progress">
+    <meta name="author" content="Rufael Melese">
+    <title>Education | Rufael Melese - Hilcoe Journey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Added theme persistence script -->
+    <script>
+        // Load saved theme or default to light mode
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+            document.getElementById('theme-toggle').checked = true;
+        }
+        
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const toggle = document.getElementById('theme-toggle');
+            
+            if (toggle.checked) {
+                html.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Add event listener when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.getElementById('theme-toggle');
+            toggle.addEventListener('change', toggleTheme);
+        });
+    </script>
+    
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Rufael.Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="education.html" class="nav-link active">Education</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <label for="theme-toggle" class="theme-switch">
+                <span class="theme-icon">🌙</span>
+                <span class="theme-icon">☀️</span>
+            </label>
+        </div>
+    </nav>
+
+    <main class="education-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>Rufael's Academic Journey</h1>
+                <p>Three years of intensive learning at Hilcoe College</p>
+            </header>
+
+            <!-- Academic Progress Table -->
+            <section class="academic-table-section">
+                <h2>Course Progression Overview</h2>
+                <div class="table-container">
+                    <table class="academic-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Semester</th>
+                                <th>Core Courses</th>
+                                <th>Key Technologies</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">First Year</td>
+                                <td>Semester 1</td>
+                                <td>Programming 1</td>
+                                <td>C++</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Semester 2</td>
+                                <td>Programming 2, Introduction to Unix</td>
+                                <td>C++, Unix/Linux</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Semester 3</td>
+                                <td>OOP, Database 1</td>
+                                <td>Java, SQL</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Second Year</td>
+                                <td>Semester 1</td>
+                                <td>Windows Programming, Database 2</td>
+                                <td>C# Windows Forms, Advanced SQL</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Semester 2</td>
+                                <td>Data Structures & Algorithms</td>
+                                <td>Algorithms, Data Structures</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Semester 3</td>
+                                <td>Web Development 1, SAD</td>
+                                <td>HTML, CSS, JavaScript, PHP</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Third Year</td>
+                                <td>Semester 1</td>
+                                <td>Web Development 2</td>
+                                <td>Laravel Framework, MVC</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Semester 2</td>
+                                <td>Assembly & Computer Organization</td>
+                                <td>Assembly Language, Computer Architecture</td>
+                                <td class="status completed">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Semester 3</td>
+                                <td>Data Mining, OOSE, Unix System Administration</td>
+                                <td>Python, Software Engineering, Unix/Linux</td>
+                                <td class="status current">In Progress</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Detailed Year Breakdown -->
+            <section class="year-breakdown">
+                <h2>Detailed Academic Breakdown</h2>
+                
+                <div class="year-card">
+                    <h3>First Year - Building Foundations</h3>
+                    <div class="year-content">
+                        <div class="courses-learned">
+                            <h4>Courses Completed:</h4>
+                            <ol class="course-list">
+                                <li>Programming 1 (C++ Fundamentals)</li>
+                                <li>Programming 2 (Advanced C++)</li>
+                                <li>Introduction to Unix</li>
+                                <li>Object-Oriented Programming (Java)</li>
+                                <li>Database 1 (SQL & Database Design)</li>
+                            </ol>
+                        </div>
+                        <div class="skills-gained">
+                            <h4>Key Skills Developed:</h4>
+                            <ul class="skills-list">
+                                <li>Procedural and Object-Oriented Programming</li>
+                                <li>Data Types, Control Structures, Functions</li>
+                                <li>Classes, Objects, Inheritance, Polymorphism</li>
+                                <li>Database Design Principles</li>
+                                <li>SQL Query Writing and Optimization</li>
+                                <li>Unix/Linux Basics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-card">
+                    <h3>Second Year - Expanding Horizons</h3>
+                    <div class="year-content">
+                        <div class="courses-learned">
+                            <h4>Courses Completed:</h4>
+                            <ol class="course-list">
+                                <li>Windows Programming (C# GUI Development)</li>
+                                <li>Database 2 (Advanced Database Concepts)</li>
+                                <li>Data Structures & Algorithms</li>
+                                <li>Web Development 1 (HTML, CSS, JavaScript, PHP)</li>
+                                <li>System Analysis & Design (SAD)</li>
+                            </ol>
+                        </div>
+                        <div class="skills-gained">
+                            <h4>Key Skills Developed:</h4>
+                            <ul class="skills-list">
+                                <li>Desktop Application Development with Windows Forms</li>
+                                <li>Algorithm Design and Analysis</li>
+                                <li>Data Structure Implementation</li>
+                                <li>Web Technologies (HTML, CSS, JavaScript)</li>
+                                <li>Backend Development with PHP</li>
+                                <li>System Design Methodologies</li>
+                                <li>Advanced Database Concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-card current-year">
+                    <h3>Third Year - Specialization & Advanced Concepts</h3>
+                    <div class="year-content">
+                        <div class="courses-learned">
+                            <h4>Courses Completed & In Progress:</h4>
+                            <ol class="course-list">
+                                <li>Web Development 2 (Laravel Framework) ✓</li>
+                                <li>Assembly Language & Computer Organization ✓</li>
+                                <li>Data Mining (Python) 🔄</li>
+                                <li>Object-Oriented Software Engineering (OOSE) 🔄</li>
+                                <li>Unix System Administration 🔄</li>
+                            </ol>
+                        </div>
+                        <div class="skills-gained">
+                            <h4>Advanced Skills Being Developed:</h4>
+                            <ul class="skills-list">
+                                <li>MVC Architecture with Laravel</li>
+                                <li>Low-level Programming and Computer Architecture</li>
+                                <li>Operating System Concepts and Implementation</li>
+                                <li>Data Mining Algorithms and Python Libraries</li>
+                                <li>Unix/Linux System Administration</li>
+                                <li>Software Engineering Best Practices</li>
+                                <li>Self-Learning: React.js, Python, Golang</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current Learning -->
+            <section class="current-learning">
+                <h2>Current Self-Directed Learning</h2>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <!-- Added sample image for React learning -->
+                        <div class="learning-image" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./React.svg" style="width: 100px; height: 100px; " alt="React Framework Learning">
+                        </div>
+                        <h3>React Framework</h3>
+                        <p>Mastering modern frontend development with React hooks, state management, and component architecture.</p>
+                    </div>
+                    <div class="learning-card">
+                        <!-- Added sample image for Python data mining -->
+                        <div class="learning-image" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./Python.svg" style="width: 100px; height: 100px; " alt="Python Data Mining">
+                        </div>
+                        <h3>Python for Data Mining</h3>
+                        <p>Applying Python libraries like Pandas, NumPy, and Scikit-learn for data analysis and machine learning projects.</p>
+                    </div>
+                    <div class="learning-card favorite">
+                        <!-- Added sample image for Golang -->
+                        <div class="learning-image" style="display: flex; align-items: center; justify-content: center;">
+                            <img src="./GoLang.svg" style="width: 100px; height: 100px; " alt="Golang Programming">
+                        </div>
+                        <h3>Golang (Favorite)</h3>
+                        <p>Exploring Go's concurrency model, microservices architecture, and backend development for future career opportunities.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rufael Melese. 「 Code is my blade. Chaos my battlefield. 」</p>
+            <div class="footer-links">
+                <a href="https://github.com/Rufaelu" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rufael-melese-6b0047299?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5wQaJqSvRA%2BHwtEinuvOCA%3D%3D" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

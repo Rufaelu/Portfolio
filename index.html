@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal CV of Rufael Melese - Hilcoe Computer Science Student & Full Stack Developer specializing in multiple programming languages">
+    <meta name="keywords" content="Rufael Melese, Computer Science, Full Stack Developer, C++, Java, C#, Laravel, React, Python, Golang, Web Development">
+    <meta name="author" content="Rufael Melese">
+    <title>Rufael Melese | Hilcoe Journey CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Added theme persistence script for consistent dark mode across pages -->
+    <script>
+        // Load saved theme or default to light mode
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+        
+        // Theme toggle functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const toggle = document.getElementById('theme-toggle');
+            
+            if (toggle.checked) {
+                html.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.classList.remove('dark-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Add event listener when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.getElementById('theme-toggle');
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            if (savedTheme === 'dark') {
+                toggle.checked = true;
+            }
+            toggle.addEventListener('change', toggleTheme);
+        });
+    </script>
+    
+    <!-- Theme Toggle -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Rufael.Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <label for="theme-toggle" class="theme-switch">
+                <span class="theme-icon">🌙</span>
+                <span class="theme-icon">☀️</span>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Rufael Melese</span>
+                        <span class="title-line highlight">Full Stack Developer</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science Student at Hilcoe</p>
+                    <p class="hero-description">
+                        Passionate about creating innovative solutions with modern technologies. 
+                        Currently mastering React, Python, and Golang while building a strong 
+                        foundation in software engineering principles.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <!-- Updated to use placeholder image with proper query -->
+                        <img src="./Rufa.jpg" alt="Professional portrait of Rufael Melese - Hilcoe Computer Science student">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>C++ <span class="skill-level">Intermediate</span></li>
+                        <li>Java <span class="skill-level">Intermediate</span></li>
+                        <li>C# <span class="skill-level">Intermediate</span></li>
+                        <li>JavaScript <span class="skill-level">Intermediate</span></li>
+                        <li>PHP <span class="skill-level">Intermediate</span></li>
+                        <li>Python <span class="skill-level">Learning</span></li>
+                        <li>Go <span class="skill-level favorite">Favorite and Learning</span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Laravel MVC</li>
+                        <li>React.js</li>
+                        <li>Windows Forms</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Database Design</li>
+                        <li>Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Current Focus</h3>
+                    <ul class="skill-list">
+                        <li>Data Mining with Python</li>
+                        <li>Unix System Administration</li>
+                        <li>Object-Oriented Software Engineering</li>
+                        <li>Advanced React Patterns</li>
+                        <li>Golang Microservices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="journey-timeline">
+        <div class="container">
+            <h2 class="section-title">My Hilcoe Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>First Year Foundation</h3>
+                        <p>Started with Programming 1 & 2 using C++, learned OOP with Java, and got introduced to Database fundamentals.</p>
+                        <span class="timeline-year">Year 1</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Desktop & Web Development</h3>
+                        <p>Mastered Windows Programming with C# GUI, conquered Data Structures & Algorithms, and dove into Web Development with HTML, CSS, JS, and PHP.</p>
+                        <span class="timeline-year">Year 2</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Advanced Frameworks & Systems</h3>
+                        <p>Learned Laravel MVC architecture, studied Assembly & Computer Organization, Operating Systems, and currently exploring Data Mining, Unix Administration, and OOSE.</p>
+                        <span class="timeline-year">Year 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Rufael Melese. 「 Code is my blade. Chaos my battlefield. 」</p>
+            <div class="footer-links">
+                <a href="https://github.com/Rufaelu" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rufael-melese-6b0047299?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5wQaJqSvRA%2BHwtEinuvOCA%3D%3D" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
