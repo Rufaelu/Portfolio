@@ -1,198 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal CV of Rufael Melese - Hilcoe Computer Science Student & Full Stack Developer specializing in multiple programming languages">
-    <meta name="keywords" content="Rufael Melese, Computer Science, Full Stack Developer, C++, Java, C#, Laravel, React, Python, Golang, Web Development">
-    <meta name="author" content="Rufael Melese">
-    <title>Rufael Melese | Hilcoe Journey CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RUFAEL MELESE // SYS.PORTFOLIO</title>
+<meta name="description" content="Rufael Melese — software developer, tester, and Microsoft 365 administrator at ActiveAddis. Go, C#, Flutter — and a 3D engine written from scratch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Major+Mono+Display&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // restore the chosen phosphor before first paint, so the tube never flashes
+  try{ var t=localStorage.getItem('phosphor'); if(t) document.documentElement.dataset.theme=t; }catch(e){}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231a0e0e'/><text y='72' x='50' text-anchor='middle' font-size='68' fill='%23ffb000' font-family='monospace'>R</text></svg>">
 </head>
 <body>
-    <!-- Added theme persistence script for consistent dark mode across pages -->
-    <script>
-        // Load saved theme or default to light mode
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            document.documentElement.classList.add('dark-theme');
-        }
-        
-        // Theme toggle functionality
-        function toggleTheme() {
-            const html = document.documentElement;
-            const toggle = document.getElementById('theme-toggle');
-            
-            if (toggle.checked) {
-                html.classList.add('dark-theme');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                html.classList.remove('dark-theme');
-                localStorage.setItem('theme', 'light');
-            }
-        }
-        
-        // Add event listener when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggle = document.getElementById('theme-toggle');
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            if (savedTheme === 'dark') {
-                toggle.checked = true;
-            }
-            toggle.addEventListener('change', toggleTheme);
-        });
-    </script>
-    
-    <!-- Theme Toggle -->
-    <input type="checkbox" id="theme-toggle" class="theme-toggle">
-    
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <span class="brand-text">Rufael.Dev</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="education.html" class="nav-link">Education</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <label for="theme-toggle" class="theme-switch">
-                <span class="theme-icon">🌙</span>
-                <span class="theme-icon">☀️</span>
-            </label>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">Rufael Melese</span>
-                        <span class="title-line highlight">Full Stack Developer</span>
-                    </h1>
-                    <p class="hero-subtitle">Computer Science Student at Hilcoe</p>
-                    <p class="hero-description">
-                        Passionate about creating innovative solutions with modern technologies. 
-                        Currently mastering React, Python, and Golang while building a strong 
-                        foundation in software engineering principles.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">Years</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">8+</span>
-                            <span class="stat-label">Languages</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <!-- Updated to use placeholder image with proper query -->
-                        <img src="./Rufa.jpg" alt="Professional portrait of Rufael Melese - Hilcoe Computer Science student">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- ============ CRT HARDWARE OVERLAYS ============ -->
+<div class="crt-scanlines" aria-hidden="true"></div>
+<div class="crt-grain" aria-hidden="true"></div>
+<div class="crt-vignette" aria-hidden="true"></div>
+<div class="crt-flicker" aria-hidden="true"></div>
+<div class="crt-beam" aria-hidden="true"></div>
 
-    <!-- Skills Preview -->
-    <section class="skills-preview">
-        <div class="container">
-            <h2 class="section-title">Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li>C++ <span class="skill-level">Intermediate</span></li>
-                        <li>Java <span class="skill-level">Intermediate</span></li>
-                        <li>C# <span class="skill-level">Intermediate</span></li>
-                        <li>JavaScript <span class="skill-level">Intermediate</span></li>
-                        <li>PHP <span class="skill-level">Intermediate</span></li>
-                        <li>Python <span class="skill-level">Learning</span></li>
-                        <li>Go <span class="skill-level favorite">Favorite and Learning</span></li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Technologies</h3>
-                    <ul class="skill-list">
-                        <li>Laravel MVC</li>
-                        <li>React.js</li>
-                        <li>Windows Forms</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Database Design</li>
-                        <li>Data Structures & Algorithms</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Current Focus</h3>
-                    <ul class="skill-list">
-                        <li>Data Mining with Python</li>
-                        <li>Unix System Administration</li>
-                        <li>Object-Oriented Software Engineering</li>
-                        <li>Advanced React Patterns</li>
-                        <li>Golang Microservices</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ============ BOOT SEQUENCE ============ -->
+<div class="boot" id="boot">
+  <div class="boot__inner">
+    <pre class="boot__logo">
+   ██████╗ ███╗   ███╗
+   ██╔══██╗████╗ ████║   SYS/PORTFOLIO
+   ██████╔╝██╔████╔██║   FIRMWARE 2.087
+   ██╔══██╗██║╚██╔╝██║   (C) 1979-2087
+   ██║  ██║██║ ╚═╝ ██║
+   ╚═╝  ╚═╝╚═╝     ╚═╝</pre>
+    <div class="boot__log" id="bootLog"></div>
+    <div class="boot__bar"><span id="bootBar"></span></div>
+    <button class="boot__skip" id="bootSkip">[ PRESS ANY KEY TO SKIP ]</button>
+  </div>
+</div>
 
-    <!-- Journey Timeline -->
-    <section class="journey-timeline">
-        <div class="container">
-            <h2 class="section-title">My Hilcoe Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">1</div>
-                    <div class="timeline-content">
-                        <h3>First Year Foundation</h3>
-                        <p>Started with Programming 1 & 2 using C++, learned OOP with Java, and got introduced to Database fundamentals.</p>
-                        <span class="timeline-year">Year 1</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">2</div>
-                    <div class="timeline-content">
-                        <h3>Desktop & Web Development</h3>
-                        <p>Mastered Windows Programming with C# GUI, conquered Data Structures & Algorithms, and dove into Web Development with HTML, CSS, JS, and PHP.</p>
-                        <span class="timeline-year">Year 2</span>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">3</div>
-                    <div class="timeline-content">
-                        <h3>Advanced Frameworks & Systems</h3>
-                        <p>Learned Laravel MVC architecture, studied Assembly & Computer Organization, Operating Systems, and currently exploring Data Mining, Unix Administration, and OOSE.</p>
-                        <span class="timeline-year">Year 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav__id" href="#top">
+    <span class="nav__dot"></span>RUFAEL.MELESE<span class="nav__ext">.SYS</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#about" data-idx="01">ABOUT</a>
+    <a href="#portrait" data-idx="02">SUBJECT</a>
+    <a href="#stack" data-idx="03">STACK</a>
+    <a href="#work" data-idx="04">WORK</a>
+    <a href="#log" data-idx="05">LOG</a>
+    <a href="#contact" data-idx="06">CONTACT</a>
+  </nav>
+  <button class="nav__phos" id="phos" type="button" aria-label="Switch phosphor colour">
+    <i></i><span id="phosLabel">P3</span>
+  </button>
+  <div class="nav__clock" id="clock">--:--:--</div>
+  <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<div class="scrollbar"><span id="scrollbarFill"></span></div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Rufael Melese. 「 Code is my blade. Chaos my battlefield. 」</p>
-            <div class="footer-links">
-                <a href="https://github.com/Rufaelu" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://www.linkedin.com/in/rufael-melese-6b0047299?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5wQaJqSvRA%2BHwtEinuvOCA%3D%3D" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__sun" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div class="hero__kicker">
+      <span class="tag">DEV / QA / M365</span>
+      <span class="rule"></span>
+      <span class="tag">TRANSMISSION ACTIVE</span>
+    </div>
+
+    <h1 class="hero__name" data-text="RUFAEL">
+      <span class="glitch" data-text="RUFAEL">RUFAEL</span>
+      <em class="hero__serif">Melese</em>
+    </h1>
+
+    <div class="hero__role">
+      <span class="prompt">&gt;</span>
+      <span id="typewriter"></span><span class="caret"></span>
+    </div>
+
+    <p class="hero__blurb">
+      Software developer, tester, and Microsoft 365 administrator. I write Go,
+      C# and Python — including a 3D engine built from scratch — then try hard to
+      break what I just made.
+    </p>
+
+    <div class="hero__cta">
+      <a class="btn btn--solid" href="#work">VIEW WORK<span class="btn__arrow">→</span></a>
+      <a class="btn" href="#contact">OPEN CHANNEL</a>
+    </div>
+  </div>
+
+  <div class="hero__meta">
+    <div class="meta__row"><span>LAT</span><b>9.0192° N</b></div>
+    <div class="meta__row"><span>LON</span><b>38.7525° E</b></div>
+    <div class="meta__row"><span>ORG</span><b>ACTIVEADDIS</b></div>
+    <div class="meta__row"><span>STATUS</span><b class="ok">EMPLOYED</b></div>
+  </div>
+
+  <div class="hero__scroll"><span></span>SCROLL</div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>GO ✦ C# ✦ PYTHON ✦ DART ✦ POSTGRESQL ✦ MYSQL ✦ OPENGL ✦ TEST DESIGN ✦ REGRESSION ✦ EXCHANGE ONLINE ✦ SHAREPOINT ✦ TEAMS ✦ ENTRA ID ✦ POWERSHELL ✦ JIRA ✦ </span>
+    <span>GO ✦ C# ✦ PYTHON ✦ DART ✦ POSTGRESQL ✦ MYSQL ✦ OPENGL ✦ TEST DESIGN ✦ REGRESSION ✦ EXCHANGE ONLINE ✦ SHAREPOINT ✦ TEAMS ✦ ENTRA ID ✦ POWERSHELL ✦ JIRA ✦ </span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="sec-head">
+    <span class="sec-num">01</span>
+    <h2>ABOUT</h2>
+    <span class="sec-line"></span>
+  </div>
+
+  <div class="about">
+    <div class="terminal reveal">
+      <div class="terminal__bar">
+        <span class="terminal__dots"><i></i><i></i><i></i></span>
+        <span class="terminal__title">~/rufael/whoami</span>
+      </div>
+      <div class="terminal__body">
+        <p><span class="prompt">$</span> cat identity.txt</p>
+        <p class="out">Currently at <b>ActiveAddis</b>. I write the code and then
+        I test it — usually my own, sometimes other people's. Games and engines in
+        Go when I want to know how something works underneath; C# and Flutter when
+        it needs to ship. Microsoft 365 administration on top of that.</p>
+        <p><span class="prompt">$</span> cat philosophy.txt</p>
+        <p class="out">A bug you can't reproduce isn't a bug report yet. Test the
+        boring path first — it's the one everyone actually uses. Any check you've
+        run three times should be running without you.</p>
+        <p><span class="prompt">$</span> uptime</p>
+        <p class="out"><span id="uptime">—</span> since the first test plan</p>
+        <p><span class="prompt">$</span> <span class="caret"></span></p>
+      </div>
+    </div>
+
+    <div class="about__stats">
+      <div class="stat reveal"><b data-count="18">0</b><span>PUBLIC REPOSITORIES</span></div>
+      <div class="stat reveal"><b data-count="6">0</b><span>LANGUAGES SHIPPED</span></div>
+      <div class="stat reveal"><b data-count="3">0</b><span>3D ENGINES BUILT</span></div>
+      <div class="stat reveal"><b data-count="5">0</b><span>M365 WORKLOADS RUN</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCROLLABLE PORTRAIT ============ -->
+<section class="portrait" id="portrait">
+  <div class="portrait__sticky">
+    <div class="portrait__bg" aria-hidden="true">
+      <div class="pgrid"></div>
+      <div class="phalo"></div>
+    </div>
+
+    <!-- big background type -->
+    <div class="portrait__type" aria-hidden="true">
+      <span class="ptype ptype--a">SUBJECT</span>
+      <span class="ptype ptype--b">01</span>
+    </div>
+
+    <figure class="figure" id="figure">
+      <img src="assets/me.webp" alt="Portrait of Rufael Melese" class="figure__main" id="figureImg" decoding="async">
+      <img src="assets/me.webp" alt="" aria-hidden="true" class="figure__ghost figure__ghost--r">
+      <img src="assets/me.webp" alt="" aria-hidden="true" class="figure__ghost figure__ghost--c">
+      <img src="assets/me.webp" alt="" aria-hidden="true" class="figure__dim" id="figureDim">
+      <div class="figure__scan" aria-hidden="true"></div>
+    </figure>
+
+    <!-- HUD callouts -->
+    <div class="hud hud--1"><span class="hud__tick"></span><b>ID / RUFAEL MELESE</b><i>REC. 0001 — VERIFIED</i></div>
+    <div class="hud hud--2"><span class="hud__tick"></span><b>OPERATING SYS</b><i>HUMAN v29 — STABLE</i></div>
+    <div class="hud hud--3"><span class="hud__tick"></span><b>PRIMARY FUNCTION</b><i>BUILD / TEST / VERIFY</i></div>
+
+    <div class="portrait__readout">
+      <div class="readout__row"><span>SCAN</span><div class="bar"><i id="scanBar"></i></div><b id="scanPct">000%</b></div>
+      <div class="readout__row"><span>SIGNAL</span><div class="bar"><i style="width:88%"></i></div><b>088%</b></div>
+    </div>
+  </div>
+  <div class="portrait__spacer"></div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section" id="stack">
+  <div class="sec-head">
+    <span class="sec-num">03</span>
+    <h2>STACK</h2>
+    <span class="sec-line"></span>
+  </div>
+
+  <div class="stack">
+    <div class="stack__col reveal">
+      <h3>LANGUAGES</h3>
+      <div class="meter" data-val="88"><span>Go</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="84"><span>C# / .NET</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="80"><span>Python</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="76"><span>Dart / Flutter</span><div class="meter__bar"><i></i></div></div>
+    </div>
+    <div class="stack__col reveal">
+      <h3>DATA &amp; TOOLS</h3>
+      <div class="meter" data-val="82"><span>PostgreSQL</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="80"><span>MySQL</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="85"><span>Git</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="78"><span>Jira / Azure DevOps</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="74"><span>PowerShell</span><div class="meter__bar"><i></i></div></div>
+    </div>
+    <div class="stack__col reveal">
+      <h3>TESTING</h3>
+      <div class="meter" data-val="90"><span>Test case design</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="88"><span>Bug reporting &amp; triage</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="86"><span>Exploratory testing</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="84"><span>Regression suites</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="78"><span>Postman / API checks</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="76"><span>UAT coordination</span><div class="meter__bar"><i></i></div></div>
+    </div>
+    <div class="stack__col reveal">
+      <h3>MICROSOFT 365</h3>
+      <div class="meter" data-val="86"><span>Exchange Online</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="83"><span>SharePoint &amp; OneDrive</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="81"><span>Teams administration</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="76"><span>Entra ID &amp; licensing</span><div class="meter__bar"><i></i></div></div>
+      <div class="meter" data-val="72"><span>Power Automate</span><div class="meter__bar"><i></i></div></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work">
+  <div class="sec-head">
+    <span class="sec-num">04</span>
+    <h2>SELECTED WORK</h2>
+    <span class="sec-line"></span>
+  </div>
+
+  <div class="work">
+    <article class="card reveal">
+      <div class="card__top"><span class="card__no">REC/001</span><span class="card__yr">2026</span></div>
+      <h3>SPACE CONTROL</h3>
+      <p>A 3D space shooter in Go on a custom engine — Core Profile OpenGL 4.1 and
+      SDL2, written from scratch. Weapon-heat lockout, three-stage shields, tight
+      collision hitboxes, and a procedural starfield of 1,500+ stars.</p>
+      <ul class="chips"><li>Go</li><li>OpenGL 4.1</li><li>SDL2</li></ul>
+      <div class="card__foot"><a href="https://github.com/Rufaelu/Space-Control" class="link" target="_blank" rel="noopener">SOURCE →</a></div>
+      <div class="card__glow" aria-hidden="true"></div>
+    </article>
+
+    <article class="card reveal">
+      <div class="card__top"><span class="card__no">REC/002</span><span class="card__yr">2026</span></div>
+      <h3>JOINME</h3>
+      <p>Location-based app for finding spontaneous nearby activities — Flutter and
+      Firebase, OpenStreetMap discovery, real-time group chat per event, clean
+      architecture throughout. Built with a team of five.</p>
+      <ul class="chips"><li>Dart / Flutter</li><li>Firebase</li><li>Firestore</li></ul>
+      <div class="card__foot"><a href="https://github.com/Rufaelu/joinme" class="link" target="_blank" rel="noopener">SOURCE →</a></div>
+      <div class="card__glow" aria-hidden="true"></div>
+    </article>
+
+    <article class="card reveal">
+      <div class="card__top"><span class="card__no">REC/003</span><span class="card__yr">2024</span></div>
+      <h3>MEN'S STORE MANAGEMENT SYSTEM</h3>
+      <p>Desktop line-of-business system in C# over a T-SQL database — inventory,
+      sales and the schema design underneath it.</p>
+      <ul class="chips"><li>C#</li><li>T-SQL</li><li>Desktop</li></ul>
+      <div class="card__foot"><a href="https://github.com/Rufaelu/Mens_Store_Management_System" class="link" target="_blank" rel="noopener">SOURCE →</a></div>
+      <div class="card__glow" aria-hidden="true"></div>
+    </article>
+  </div>
+
+</section>
+
+<!-- ============ LOG / TIMELINE ============ -->
+<section class="section" id="log">
+  <div class="sec-head">
+    <span class="sec-num">05</span>
+    <h2>SYSTEM LOG</h2>
+    <span class="sec-line"></span>
+  </div>
+
+  <ol class="timeline">
+    <li class="reveal"><time>NOW</time><div><h4>ActiveAddis</h4><p>Building and testing software day to day — the current post, and the reason the release notes are legible.</p></div></li>
+    <li class="reveal"><time>2026</time><div><h4>Space Control &amp; JoinMe</h4><p>A 3D engine in Go on raw OpenGL, and a Flutter app on Firebase — in the same year.</p></div></li>
+    <li class="reveal"><time>2024</time><div><h4>Men's Store Management System</h4><p>C# desktop application over T-SQL — the one that taught me schema design properly.</p></div></li>
+    <li class="reveal"><time>2022</time><div><h4>First commit pushed</h4><p>The account opens in October. Everything above starts here.</p></div></li>
+  </ol>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--contact" id="contact">
+  <div class="sec-head">
+    <span class="sec-num">06</span>
+    <h2>OPEN CHANNEL</h2>
+    <span class="sec-line"></span>
+  </div>
+
+  <div class="contact">
+    <div class="contact__lead">
+      <p class="big">Got something that needs<br><em>breaking?</em></p>
+      <p class="small">Transmission window is open. Response typically within 48 hours,
+      Earth time.</p>
+    </div>
+
+    <div class="terminal terminal--contact">
+      <div class="terminal__bar">
+        <span class="terminal__dots"><i></i><i></i><i></i></span>
+        <span class="terminal__title">~/rufael/connect</span>
+      </div>
+      <div class="terminal__body">
+        <a class="chan" href="mailto:niamraf12@gmail.com">
+          <span class="prompt">$</span> mail <b>niamraf12@gmail.com</b><span class="chan__go">→</span>
+        </a>
+        <a class="chan" href="https://github.com/Rufaelu" target="_blank" rel="noopener">
+          <span class="prompt">$</span> open <b>github.com/Rufaelu</b><span class="chan__go">→</span>
+        </a>
+        <a class="chan" href="https://www.linkedin.com/in/rufael-melese-2181b23a9" target="_blank" rel="noopener">
+          <span class="prompt">$</span> open <b>linkedin.com/in/rufael-melese</b><span class="chan__go">→</span>
+        </a>
+        <a class="chan" href="#" >
+          <span class="prompt">$</span> get <b>resume.pdf</b><span class="chan__go">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© <span id="year">2026</span> RUFAEL MELESE</span>
+  <span class="footer__mid">— BUILT ON A CRT, RENDERED IN THE FUTURE —</span>
+  <span>NO COOKIES. NO TRACKERS. JUST PHOSPHOR.</span>
+</footer>
+
+</main>
+<script src="js/main.js"></script>
 </body>
 </html>
